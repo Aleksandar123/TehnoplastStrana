@@ -40,6 +40,7 @@ font-family: 'Open Sans', sans-serif;
 
 .nav .navigacija {
 margin-top: 20px;
+padding-bottom:30px;
 }
 .nav li {
 	display: inline;
@@ -60,24 +61,6 @@ border-bottom: 1px solid #dbdbdb;
 box-shadow: 0px 0px 0px grey;
 }
 
-.jumbotron {
-	background-image:url('../images/stock3.jpg');
-	height:550px;
-	background-size: cover;
-	margin-bottom:0px;
-}
-
-.jumbotron .container {
-  position: relative;
-  top:400px;
-}
-.jumbotron h1{
-  color: #fff;
-  font-size: 48px;  
-  font-family: 'Poiret One', cursive;
-  font-weight: bold;
-  text-shadow:2px 2px #333;
-}
 	
 }
 .proizvodi {
@@ -86,8 +69,8 @@ box-shadow: 0px 0px 0px grey;
 	
 }
 
-.proizvodi h2 {
-	color: #393c3d;
+h2 {
+	color: #4DAF7C;
 	font-size:24px;
 }
 
@@ -96,6 +79,7 @@ box-shadow: 0px 0px 0px grey;
 	font-size:15px;
 }
 .uslugi {
+	margin-top:40px;
 	padding: 20px;
 	border-bottom:1px solid #dbdbdb;
 }
@@ -108,7 +92,8 @@ box-shadow: 0px 0px 0px grey;
 }
 
 .uslugi .ikoni:hover{
-	border-left: 1px solid #4DAF7C;
+	border-left: 3px solid #4DAF7C; 
+	border-radius:5%;
 	
 
 }
@@ -148,19 +133,6 @@ float:left;
 	clear:both;
 	font-size:10px;
 }
-.accordion-content {
-	padding:20px;
-	height:auto;
-	
-	text-align:center;
-}
-
-/* .accordion-content:target {
-	
-	height:auto;
-	padding:20px;
-} */
-
 
 .zaNas {
 	margin-top: 100px;
@@ -226,3 +198,30 @@ h4 {
 .prazno_mesto {
 	padding: 50px;
 }
+
+.proUsl  {
+	position:relative;
+	overflow-x: hidden;
+	margin-top:50px;
+	padding-top: 100px;
+	padding-left:250px;
+	width:1100px;
+	
+} 
+
+
+	
+} 
+.proUsl .proVodovod {
+float: left;
+}
+
+.proUsl .naslh2 {
+	padding-left:15px;
+	padding-bottom:15px;
+	width:300px;
+	color:#4DAF7C;
+}
+ .proUsl .usl-text {
+	padding-top:25px;
+} 
