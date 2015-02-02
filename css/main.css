@@ -4,6 +4,7 @@ background: #66CC99;
 }
 body {
 font-family: 'Open Sans', sans-serif;
+background-color:#fff;
 }
  .nav{
 	/*border-bottom: 1px solid #dbdbdb;
@@ -209,9 +210,6 @@ h4 {
 	
 } 
 
-
-	
-} 
 .proUsl .proVodovod {
 float: left;
 }
@@ -225,3 +223,18 @@ float: left;
  .proUsl .usl-text {
 	padding-top:25px;
 } 
+
+
+.novosti {
+	margin-top:100px;
+}
+
+
+.novosti .row{
+	border-bottom: solid 1px #4DAF7C; 
+	border-radius: 3%;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+.novosti .posleden {
+	border-bottom: 0px;}
