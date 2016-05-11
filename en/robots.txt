@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+Sitemap: http://www.tehnoplast.mk/sitemap.xml
+Sitemap: http://tehnoplast.mk/sitemap.xml

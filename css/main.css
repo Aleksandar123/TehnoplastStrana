@@ -1,83 +1,96 @@
-*::selection
-{
-background: #66CC99;
+*::selection{
+	background: #6DC998;
 }
 body {
-font-family: 'Open Sans', sans-serif;
-background-color:#fff;
+	font-family: 'Open Sans', sans-serif; 
+	background-color:#fdfefd;
+	overflow-x:hidden;
 }
- .nav{
-	/*border-bottom: 1px solid #dbdbdb;
-	box-shadow: 2px 2px 1px grey;*/
-	text-align:center;
-
-} 
-
-.nav .container {
-	height:70px;
-}
-
-.nav a{
-	color: #5a5a5a;
-	font-size: 14px;
+.nav a {
+	color: #A2A3A3;
+	font-size: 1em;
 	font-weight: bold;
-	padding: 5px 30px;
 	text-transform: uppercase;
 	text-decoration:none;	
 }
-.navigacija a:hover{
-	border-bottom:solid #4DAF7C;
-	border-radius: 20px 5px 20px 5px;
-	color:#fff;
-	background:#4DAF7C;
-}
-
-.navigacija .aktiven{
-	border-bottom: solid #4DAF7C;
-	border-radius: 10px;
-	color: #4DAF7C;
+.navigacija a:hover {
+	color: #555;
 	padding-top:3px;
+	padding-bottom:10px;
+	border-bottom:2px solid #92d7b2;
+	-webkit-animation:navg 0.1s;
+	animation: navg 0.1s;
 }
+@-webkit-keyframes navg {
+    0%   {border-bottom:2px solid #92d7b2; padding-bottom:2px;}
+    40%  { border-bottom:2px solid #92d7b2; padding-bottom:4px;} 
+    50%  { border-bottom:2px solid #92d7b2; padding-bottom:5px;}
+    90%  { border-bottom:2px solid #92d7b2; padding-bottom:8px;}
+    100% { border-bottom:2px solid #92d7b2; padding-bottom:10px;}
+}
+@keyframes navg {
+    0%   {border-bottom:2px solid #92d7b2; padding-bottom:2px;}
+    40%  { border-bottom:2px solid #92d7b2; padding-bottom:4px;} 
+    50%  { border-bottom:2px solid #92d7b2; padding-bottom:5px;}
+    90%  { border-bottom:2px solid #92d7b2; padding-bottom:8px;}
+    100% { border-bottom:2px solid #92d7b2; padding-bottom:10px;}
+}
+.navigacija .aktiven a {
+	color: #4DAF7C;
+}
+.navigacija .aktiven {
+	padding-top:3px;
+	padding-bottom:9px;
+	border-bottom:2px solid #92d7b2;
 
-.nav .navigacija {
-margin-top: 20px;
-padding-bottom:30px;
+}
+.aktiven_sm {
+	border-bottom:2px solid #4DAF7C;
 }
 .nav li {
-	display: inline;
+	 display: inline;
 }
-
-.logo
-{	
-	padding: 0;
-	/* float: left; */
+.navigacija {
+	text-align: center;	
 }
-
-.navigacija{
-text-align: center;
-margin-bottom:0px;
-padding-bottom:20px;
-padding-left:20px;
-border-bottom: 1px solid #dbdbdb;
-box-shadow: 0px 0px 0px grey;
+.logo {
+	text-align:center;
 }
-
-	
+.logo_s {
+	text-align:center;
+	width:90%;
+	height:90%;
+}
+.nav_small {
+	text-align:center;
+	text-justify:auto;
+}
+.nav_small a {
+	color: #5a5a5a;
+	font-size: 1em;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration:none;
+	padding-bottom:40px;
+}
+ .nav_small li {
+	padding-bottom:10px;
+}
+.nav_small a:hover {
+	color:#4DAF7C;
+}
+.navigacija_small {
+	display:block;
+	list-style-type: none;
+	padding-bottom:40px;
 }
 .proizvodi {
 	background-color: #efefef;
-	border-bottom:1px solid #dbdbdb;
-	
+	border-bottom:1px solid #dbdbdb;	
 }
-
 h2 {
 	color: #4DAF7C;
 	font-size:24px;
-}
-
-.proizvodi p {
-	margin-bottom:13px;
-	font-size:15px;
 }
 .uslugi {
 	margin-top:40px;
@@ -87,133 +100,72 @@ h2 {
 .uslugi .ikoni{
 	text-align:center;
 }
-.uslugi .ikoni a{
+.uslugi .ikoni a {
 	text-decoration:none;
-	color: #333;	
+	color: #333;
 }
-
-.uslugi .ikoni:hover{
-	border-left: 3px solid #4DAF7C; 
-	border-radius:5%;
-	
-
+.uslugi .ikoni:hover {
+	border-left: 1px solid #4DAF7C; 
+	border-right: 1px solid #4DAF7C; 
 }
-
-.footer{
+.footer {
 	background-color: #efefef;
 }
-
-.footer a{
+.footer a {
 	color: #5a5a5a;
-	font-size: 11px;
+	font-size: 0.8em;
 	font-weight: bold;
-	padding: 10px 10px;
 	text-transform: uppercase;
-	text-decoration:none;	
+	text-decoration:none;
 }
-
-.footer li {
-	display:inline;
+.footer ul {
+	list-style-type:none;
 }
-
-.footer .navigacija_footer {
-margin-top:40px;
-float:right;
-}
-.footer .navigacija_footer a:hover{
+.footer .navigacija_footer a:hover {
 	color:#4DAF7C;
 }
-
-
-.footer .logo{
-float:left;
-}
-
-.footer .copyright{
-	text-align:center;
-	clear:both;
+ .footer .copyright {
 	font-size:10px;
 }
-
-.zaNas {
-	margin-top: 100px;
+.footer .logo img {
+	width: 100%;
+	height: 100%;
 }
-
+.nav_small_f a {
+	color: #5a5a5a;
+	font-size: 0.8em;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration:none;
+	padding-bottom:40px;
+}
+ .nav_small_f li {
+	padding-bottom: 10px;
+}
+.nav_small_f a:hover {
+	color:#4DAF7C;
+}
+.navigacija_small_f {
+	display: block;
+	list-style-type: none;
+}
 .zaNas p {
 	font-size:16px;
 }
-
-.kontakt {
-	margin-top:70px;
-	margin-left: 10px;
-	margin-right: 40px;
-	padding: 30px;
-}
-.kontakt form
-{
-	max-width:450px;
-	margin: 0 auto 100px;
-	padding: 0 20px;
-}
-
-.kontakt textarea{
-	border: 1px solid;
-	width: 100%;
-	padding: 10px;
-	font-size:12px;
-	resize:none;
-}
-
-.kontakt input{
-	border: 1px solid;
-	width: 220px;
-	font-size:16px;
-}
-.kontakt input[type="submit"]{
-	
-	
-}
-
-.kontakt textarea:focus {
-	border-color:#4DAF7C;
-}
-
-.kontakt input:focus {
-	border-color:#4DAF7C;
-}
-
-.contact_header {
-	padding-left:170px;
-	color:#4DAF7C;
-}
-
 .kontakt_informacii {
 	padding-top:70px;
-
 }
-
 h4 {
 	color:#4DAF7C;
 }
-
 .prazno_mesto {
 	padding: 50px;
 }
-
-.proUsl  {
+.proUsl {
 	position:relative;
 	overflow-x: hidden;
-	margin-top:50px;
-	padding-top: 100px;
-	padding-left:250px;
-	width:1100px;
-	
+	padding-left:150px;	
 } 
-
-.proUsl .proVodovod {
-float: left;
-}
-
 .proUsl .naslh2 {
 	padding-left:15px;
 	padding-bottom:15px;
@@ -223,18 +175,49 @@ float: left;
  .proUsl .usl-text {
 	padding-top:25px;
 } 
-
-
-.novosti {
-	margin-top:100px;
-}
-
-
-.novosti .row{
+.novosti .row {
 	border-bottom: solid 1px #4DAF7C; 
 	border-radius: 3%;
 	padding-top:20px;
 	padding-bottom:20px;
 }
-.novosti .posleden {
-	border-bottom: 0px;}
+.map_canvas_sm {
+	width: 350px;
+    height: 200px; 
+}
+.map_canvas {
+	width: 400px;
+    height: 400px; 
+}
+.ex_l {
+	color: #4DAF7C;
+	font-weight: 700;
+}
+.mesto
+{
+color: green;
+}
+.piu:hover {
+	position:relative;       
+	-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	-moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.errorPage404 {
+	font-size:25em;
+	color:#4DAF7C;
+	padding-left: 25%;
+	margin:0px;
+	height:390px;
+}
+.errorPage404 > hr {
+	padding:0px;
+	margin-top:0px;
+	margin-bottom:0px;
+}
+.errorPageText{
+	font-size:30px;	
+	text-align:center;
+	padding-bottom:100px;
+}

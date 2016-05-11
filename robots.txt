@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /spojni_materijali.html
+Disallow: /proizvodi.html
+Disallow: /za%20nas.html
+Disallow: /contact-us.html
+
+Sitemap: http://www.tehnoplast.mk/sitemap.xml
